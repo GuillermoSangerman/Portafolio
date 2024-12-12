@@ -15,53 +15,94 @@
     <script src="./script/main.js" defer type="module"></script>
 </head>
 
-<body>
-    <!-- Contenedor Principal -->
-    <div class="container-fluid ">
-        <div class="d-flex my-4 justify-content-center text-center">
-            <div class="card presentacion border border-5 mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4 d-flex flex-row-reverse ">
-                        <img src="./img/Sangerman.jpg"
-                            class="img-fluid img_presentacion border border-5 m-1 d-md-flex-row rounded-circle d-md-none"
-                            width="80px" alt="Fotografia Sangerman">
-                        <img src="./img/Sangerman.jpg"
-                            class="img-fluid img_presentacion border border-5 m-1 d-md-flex-row rounded-circle d-none d-md-block"
-                            width="140px" alt="Fotografia Sangerman">
-                        <h5 class="card-title mt-3 d-md-none">Sangerman Cruz Guillermo Eduardo</h5>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h4 class="card-title d-none d-md-block">Sangerman Cruz Guillermo Eduardo</4>
-                                <h5 class="card-title ">Programador Junior</h5>
-                                <p class="card-text">Tengo experiencia utilizando Html, Css, Javascript, Bootstrap .</p>
-                        </div>
-                    </div>
-                </div>
+<body class="bg-dark">
+    <nav class="vw-100 navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Sangerman</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-md-flex justify-content-md-end px-4" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active boton_inicio" aria-current="page">Inicio</a>
+              <a class="nav-link boton_proyectos">Proyectos</a>
+              <a class="nav-link boton_contacto">Contacto</a>
             </div>
+          </div>
         </div>
-        <!-- Contenedor de los proyectos -->
+      </nav>
+    <main class=" vw-100 vh-100 fondo_app d-none">
+        <!-- Contenedor Principal -->
         <div class="container-fluid">
-            <div class="mb-5 text-white text-center">
-                <h2>MIS PROYECTOS</h2>
-             </div>
-            <!-- Proyectos -->
-            <div id="cards" class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- Proyectos individuales -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+            <div class="card_present d-flex py-4 justify-content-center text-center d-none">
+                <div class="card presentacion border border-5 mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex flex-row-reverse ">
+                            <img src="./img/Sangerman.jpg"
+                                class="img-fluid img_presentacion border border-5 m-1 d-md-flex-row rounded-circle d-md-none"
+                                width="80px" alt="Fotografia Sangerman">
+                            <img src="./img/Sangerman.jpg"
+                                class="img-fluid img_presentacion border border-5 m-1 d-md-flex-row rounded-circle d-none d-md-block"
+                                width="140px" alt="Fotografia Sangerman">
+                            <h5 class="card-title mt-3 d-md-none">Sangerman Cruz Guillermo Eduardo</h5>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title d-none d-md-block">Sangerman Cruz Guillermo Eduardo</4>
+                                    <h5 class="card-title ">Programador Junior</h5>
+                                    <p class="card-text">Tengo experiencia utilizando Html, Css, Javascript, Bootstrap .
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenedor de los proyectos -->
+            <div class="container-fluid contenedor_proyectos d-none">
+                <div class="py-5 text-white text-center">
+                    <h2>MIS PROYECTOS</h2>
+                </div>
+                <!-- Proyectos -->
+                <div id="cards" class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Proyectos individuales -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <footer class="bg-danger d-none">
+            <div class="bg-warning vw-100"><h2>hello word</h2></div>
+        </footer>
+    </main>
+   
+    <!-- imagen de fondo -->
+    <div class="container-fluid pt-4 img_fondo bg-gradient d-flex justify-content-center align-items-center">
 
+        <div class=" p-1 w-50 h-50 d-flex flex-column justify-content-center align-items-center">
+            <div class=" h-50 d-flex align-items-center">
+                <h5 class="text-white text-center fs-2">Diseño Responsivo y Adaptativo para Aplicaciones Móviles</h5>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div class="bg-dark tablet  border border-5 rounded-4  "><img class="img-fluid rounded-3"
+                        src="./img/appComoseveImpuestos.jpg" alt=""></div>
+                <div class="bg-dark desktop  border border-5 rounded-4  "><img class="img-fluid rounded-3"
+                        src="./img/appComoseveImpuestos.jpg" alt=""></div>
+                <div class="bg-dark mobile  border border-5 rounded-4  "><img class="img-fluid w-100 h-100 rounded-3"
+                        src="./img/mobile-design-Calculadora-impustos.jpg" alt=""></div>
+            </div>
+
+        </div>
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

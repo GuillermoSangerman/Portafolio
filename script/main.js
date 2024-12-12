@@ -1,7 +1,19 @@
 import { misProyectos } from "./data.js";
 
 const cards = document.querySelector('#cards') 
+const botonProyectos = document.querySelector('.boton_proyectos')
+const botonInicio = document.querySelector('.boton_inicio')
+const fondoApp = document.querySelector('.fondo_app')
+const contenedorProyectos = document.querySelector('.contenedor_proyectos')
+const imgFondo = document.querySelector('.img_fondo')
+const botonContacto = document.querySelector('.boton_contacto')
+const cardPresent = document.querySelector('.card_present')
 function proyectos() {
+    contenedorProyectos.classList.remove('d-none')
+    fondoApp.classList.remove('d-none')
+    imgFondo.classList.add('d-none')
+    cardPresent.classList.add('d-none')
+
     cards.innerHTML = ""
     misProyectos.forEach(element => {
         console.log(misProyectos);
@@ -26,4 +38,17 @@ function proyectos() {
     cards.innerHTML += todosLosProyectos
     });
 }
-proyectos()
+
+botonProyectos.addEventListener('click', proyectos)
+botonInicio.addEventListener('click', ()=>{
+  contenedorProyectos.classList.add('d-none')
+  fondoApp.classList.add('d-none')
+  imgFondo.classList.remove('d-none')
+})
+botonContacto.addEventListener('click', () =>{
+  cardPresent.classList.remove('d-none')
+  contenedorProyectos.classList.add('d-none')
+  fondoApp.classList.remove('d-none')
+  imgFondo.classList.add('d-none')
+
+})

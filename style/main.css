@@ -13,8 +13,12 @@
     --fontLora: "Lora", serif;
 }
 
-body {
-    background-color: var(--fondo);
+.fondo_app {
+    background-image: url("/img/fondoresponsive.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 .presentacion {
@@ -41,4 +45,23 @@ body {
 }
 .link_button{
     background-color: #ffffff;
+}
+.tablet{
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+    border-color: var(--EColorInh) !important;
+}
+.desktop{
+    width: 200px;
+    height: 140px;
+    padding: 5px;
+    margin-inline: 10px;
+    border-color: var(--EColorInh) !important;
+}
+.mobile{
+    width: 70px;
+    height: 120px;
+    padding: 1px;
+    border-color: var(--EColorInh) !important;
 }
