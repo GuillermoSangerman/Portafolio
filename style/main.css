@@ -6,13 +6,15 @@
 
 :root {
     --fondo: #011a27;
-    --grisCol: #626d71;
-    --grisClaro: #cdcdc0;
+    --grisCol: #c05805;
+    --grisClaro: #2e2300;
     --EColorInh: #20232a;
     --EColorAluminum: #acbebe;
     --fontLora: "Lora", serif;
 }
-
+body{
+    font-family: var(--fontLora);
+}
 .fondo_app {
     background-image: url("/img/fondoresponsive.png");
     background-repeat: no-repeat;
@@ -20,23 +22,24 @@
     background-size: contain;
     background-attachment: fixed;
 }
+.navbar-toggler{
+    background-color: white;
+    
+}
 
 .presentacion {
-    background-color: var(--grisClaro);
-    border-color: var(--grisCol) !important;
-    text-shadow: 2px 2px 15px #011a27;
+    background-color: var(--EColorInh);
+    border-color: var(--fondo) !important;
+    color: white;
     font-family: var(--fontLora);
 
 }
-
-.presentacion>div p {
-    text-shadow: 2px 2px 10px var(--grisCol) !important;
+.btn_contacto{
+    background-color: var(--grisCol);
 }
-
-.img_presentacion {
-    border-color: var(--grisCol) !important;
+.img_fondo{
+    padding-top: 4rem;
 }
-
 .card_proyect {
     background-color: var(--EColorInh);
     border-color: var(--EColorAluminum) !important;

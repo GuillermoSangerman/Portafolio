@@ -16,17 +16,17 @@
 </head>
 
 <body class="bg-dark">
-    <nav class="vw-100 navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="#">Sangerman</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md bg-body-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Sangerman</a>
+          <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse d-md-flex justify-content-md-end px-4" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active boton_inicio" aria-current="page">Inicio</a>
-              <a class="nav-link boton_proyectos">Proyectos</a>
-              <a class="nav-link boton_contacto">Contacto</a>
+              <a class="nav-link active boton_inicio text-white" aria-current="page">Inicio</a>
+              <a class="nav-link boton_proyectos text-white">Proyectos</a>
+              <a class="nav-link boton_contacto text-white">Contacto</a>
             </div>
           </div>
         </div>
@@ -34,24 +34,16 @@
     <main class=" vw-100 vh-100 fondo_app d-none">
         <!-- Contenedor Principal -->
         <div class="container-fluid">
-            <div class="card_present vw-100 vh-100  d-flex justify-content-center align-items-center text-center d-none">
+            <div class="card_present vw-75 vh-100  d-flex justify-content-center align-items-center text-center d-none">
                 <div class="card presentacion border border-5 mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4 d-flex flex-row-reverse ">
-                            <img src="./img/Sangerman.jpg"
-                                class="img-fluid img_presentacion border border-5 m-1 d-md-flex-row rounded-circle d-md-none"
-                                width="80px" alt="Fotografia Sangerman">
-                            <img src="./img/Sangerman.jpg"
-                                class="img-fluid img_presentacion border border-5 m-1 d-md-flex-row rounded-circle d-none d-md-block"
-                                width="140px" alt="Fotografia Sangerman">
-                            <h5 class="card-title mt-3 d-md-none">Sangerman Cruz Guillermo Eduardo</h5>
-                        </div>
-                        <div class="col-md-8">
+                    <div class="row g-2">
+                        <div class="col-12">
                             <div class="card-body">
-                                <h4 class="card-title d-none d-md-block">Sangerman Cruz Guillermo Eduardo</4>
-                                    <h5 class="card-title ">Programador Junior</h5>
+                                <h4 class="card-title">Guillermo Sangerman</h4>
+                                    <h5 class="card-title ">Programador</h5>
                                     <p class="card-text">Tengo experiencia utilizando Html, Css, Javascript, Bootstrap .
                                     </p>
+                                    <button class="btn btn_contacto rounded-4">Contactame!</button>
                             </div>
                         </div>
                     </div>
@@ -79,25 +71,25 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-danger d-none">
-            <div class="bg-warning vw-100"><h2>hello word</h2></div>
-        </footer>
     </main>
    
-    <!-- imagen de fondo -->
+    <!-- imagen principal -->
     <div class="container-fluid img_fondo bg-gradient d-flex justify-content-center align-items-center">
 
         <div class=" p-1 vw-100 vh-100 w-50 h-50 d-flex flex-column justify-content-center align-items-center">
             <div class=" h-50 d-flex align-items-center ">
                 <h5 class="text-white text-center fs-2 my-4">Diseño Responsivo y Adaptativo para Aplicaciones Móviles</h5>
             </div>
-            <div class="d-flex flex-column flex-md-row">
-                <div class="bg-dark tablet  border border-5 rounded-4  "><img class="img-fluid rounded-3"
-                        src="./img/appComoseveImpuestos.jpg" alt=""></div>
+            <div class="d-flex">
+                <div class="bg-dark tablet  border border-5 rounded-4  d-none d-md-block"><img class="img-fluid rounded-3"
+                        src="./img/appComoseveImpuestos.jpg" alt="dibujo de tablet"></div>
                 <div class="bg-dark desktop  border border-5 rounded-4 my-2"><img class="img-fluid rounded-3"
-                        src="./img/appComoseveImpuestos.jpg" alt=""></div>
+                        src="./img/appComoseveImpuestos.jpg" alt="dibujo de computadora"></div>
                 <div class="bg-dark mobile  border border-5 rounded-4  "><img class="img-fluid w-100 h-100 rounded-3"
-                        src="./img/mobile-design-Calculadora-impustos.jpg" alt=""></div>
+                        src="./img/mobile-design-Calculadora-impustos.jpg" alt="dibujo de celular"></div>
+            </div>
+            <div class=" h-50 d-flex align-items-center ">
+                <h5 class="text-white text-center fs-2 my-4">Utilizando Html, Css Y Bootstrap.</h5>
             </div>
 
         </div>

@@ -8,6 +8,7 @@ const contenedorProyectos = document.querySelector('.contenedor_proyectos')
 const imgFondo = document.querySelector('.img_fondo')
 const botonContacto = document.querySelector('.boton_contacto')
 const cardPresent = document.querySelector('.card_present')
+const btnContacto = document.querySelector('.btn_contacto')
 function proyectos() {
     contenedorProyectos.classList.remove('d-none')
     fondoApp.classList.remove('d-none')
@@ -38,7 +39,10 @@ function proyectos() {
     cards.innerHTML += todosLosProyectos
     });
 }
-
+function miContacto() {
+  let miNumero = 9511921999
+  window.open(`https://wa.me/52${miNumero}?text=¿Cómo te puedo ayudar?`)
+}
 botonProyectos.addEventListener('click', proyectos)
 botonInicio.addEventListener('click', ()=>{
   contenedorProyectos.classList.add('d-none')
@@ -52,3 +56,4 @@ botonContacto.addEventListener('click', () =>{
   imgFondo.classList.add('d-none')
 
 })
+btnContacto.addEventListener('click', miContacto)
